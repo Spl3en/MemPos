@@ -37,22 +37,24 @@ mempos_int_new (MemProc *mp, DWORD addrX, DWORD addrY);
 
 // ----------- Methods ------------
 
-bool
+int
 mempos_refresh (MemPos *p);
 
-void
-mempos_init (MemPos *p, MemProc *mp, DWORD addrX, DWORD addrY);
-
-bool
-mempos_int_refresh (MemPos *p);
-
-// --- Accessors
 
 void
 mempos_set (MemPos *p, float newX, float newY);
 
+
 void
 mempos_get (MemPos *p, float *x, float *y);
+
+
+void
+mempos_init (MemPos *p, MemProc *mp, DWORD addrX, DWORD addrY);
+
+
+int
+mempos_int_refresh (MemPos *p);
 
 
 
